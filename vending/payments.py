@@ -1,6 +1,8 @@
 from data_access_objects import PaymentDao
 
 class PaymentProcessor:
+    _data: PaymentDao = None
+
     def __init__(self):
         self._data = PaymentDao()
 
