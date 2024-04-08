@@ -44,7 +44,7 @@ getting_started/test_subtract.py s                                              
 
 In the `getting_started/test_subtract.py` file, comment out the first line, with the `@skip` tag, like this:
 ```gherkin
-# @skipments
+# @skip
   Scenario: Arguments for given, when, then
     Given there are 7877 cucumbers
 
