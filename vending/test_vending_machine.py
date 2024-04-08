@@ -36,6 +36,7 @@ def should_have_total_payment(vending_machine: VendingMachine, expected_payment)
     assert actual_payment == expected_payment
 
 
+@given("I buy a product")
 @when("I buy a product")
 def insert_a_coin(vending_machine: VendingMachine):
     vending_machine.buy_product()

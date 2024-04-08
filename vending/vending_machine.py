@@ -25,6 +25,11 @@ class VendingMachine:
         if self.payment_processor.is_payment_made():
             self.dispensed_product = True
             self.message = 'Enjoy!'
+            amount = self.payment_processor.payment_amount()
+            if amount > 50:
+                self.coin_return = amount - 50
+            else:
+                self.coin_return = 0
             self.payment_processor.reset()
             return 'product'
         else:

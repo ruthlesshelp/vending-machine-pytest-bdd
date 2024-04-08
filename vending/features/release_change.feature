@@ -21,14 +21,14 @@ Feature: Releasing Change
     When I release change
     Then the vending machine should release 75 cents
 
-#   Scenario: Releasing change after buying product with exact money returns no change
-#     Given a vending machine with 50 cents
-#     And I buy a product
-#     When I release change
-#     Then the vending machine should release 0 cents
+  Scenario: Releasing change after buying product with exact money returns no change
+    Given a vending machine with 50 cents
+    And I buy a product
+    When I release change
+    Then the vending machine should release 0 cents
 
-#   Scenario: Releasing change after buying product with extra money returns change
-#     Given a vending machine with 75 cents
-#     And I buy a product
-#     When I release change
-#     Then the vending machine should release 25 cents
+  Scenario: Releasing change after buying product with extra money returns change
+    Given a vending machine with 75 cents
+    And I buy a product
+    When I release change
+    Then the vending machine should release 25 cents
